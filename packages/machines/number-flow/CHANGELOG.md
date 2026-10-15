@@ -1,5 +1,31 @@
 # @zag-js/number-flow
 
+## 2.0.0-next.4
+
+### Minor Changes
+
+- [#3342](https://github.com/chakra-ui/zag/pull/3342)
+  [`37b964f`](https://github.com/chakra-ui/zag/commit/37b964fc3619878343f21ddef474a473df0e221f) Thanks
+  [@github-actions](https://github.com/apps/github-actions)! - Smoother transitions when the number gains or loses
+  digits.
+
+  - Digits and symbols that enter or exit (e.g. `999` to `1,000`) now grow or shrink in place while fading, instead of
+    popping in and out. New digits also roll in by one step.
+  - `transformTiming` now controls these enter and exit transitions. Previously it had no effect.
+  - The default timing for rolls and transitions is now a spring-like easing over `900ms`.
+  - Digits and symbols expose `data-entering` and `data-exiting` while they animate in or out.
+  - Fixed issue where reordering `formatOptions` keys restarted the format update.
+
+### Patch Changes
+
+- Updated dependencies [[`7a71c15`](https://github.com/chakra-ui/zag/commit/7a71c1551f2b90cb7e89981e8ce9902b7fca488b)]:
+  - @zag-js/dom-query@2.0.0-next.4
+  - @zag-js/core@2.0.0-next.4
+  - @zag-js/i18n-utils@2.0.0-next.4
+  - @zag-js/anatomy@2.0.0-next.4
+  - @zag-js/types@2.0.0-next.4
+  - @zag-js/utils@2.0.0-next.4
+
 ## 2.0.0-next.3
 
 ### Patch Changes
